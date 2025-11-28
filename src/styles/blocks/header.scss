@@ -7,7 +7,7 @@
 }
 
 .header {
-  background-color: white;
+  background-color: $white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,8 +16,8 @@
 
 .logo {
   display: block;
-  height: $padding-50;
-  width: $padding-50;
+  height: $padding-40;
+  width: $padding-40;
 }
 
 .nav {
@@ -40,7 +40,7 @@
   &__link {
     display: block;
     position: relative;
-    line-height: 60px;
+    line-height: $line-height;
     text-decoration: none;
     color: $primary-color;
     text-transform: uppercase;
