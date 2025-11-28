@@ -47,7 +47,7 @@
     padding: 0;
     text-align: center;
     align-items: center;
-    transition: color 0.3s;
+    transition: color $transition-duration;
 
     &.is-active {
       color: $blue-color;

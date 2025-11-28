@@ -1,19 +1,20 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 48px 46px;
-  padding: 50px 40px;
+  gap: $row-gap $column-gap;
+  padding: $card-top-bottom-padding $card-left-right-padding;
+  margin-inline: auto;
+  width: max-content;
 }
 
 .card {
   box-sizing: border-box;
-  width: 198px;
-  border: 1px solid #f3f3f3;
+  width: $card-width;
+  border: 1px solid $gray;
   border-radius: 5px;
   background-color: $white;
   overflow: hidden;
-  transition: transform 0.3s;
+  transition: transform $transition-duration;
 
   &__image {
     width: 160px;
@@ -31,6 +32,7 @@
     line-height: 18px;
     color: $primary-color;
     margin: 0 0 $spacing-xs;
+    transition: color $transition-duration;
   }
 
   &__code {
@@ -87,7 +89,7 @@
     height: 40px;
     padding: 11px;
     margin: 0 $spacing-md $spacing-md;
-    background-color: $accent-color;
+    background-color: $blue-color;
     color: $white;
     text-align: center;
     text-decoration: none;
@@ -96,16 +98,16 @@
     font-size: $font-md;
     line-height: 16px;
     border-radius: 5px;
-    border: 1px solid $accent-color;
+    border: 1px solid $blue-color;
     box-sizing: border-box;
     transition:
-      background-color 0.3s,
-      color 0.3s;
+      background-color $transition-duration,
+      color $transition-duration;
 
     &:hover,
     &[data-qa='card-hover']:hover {
       background-color: $white;
-      color: $accent-color;
+      color: $blue-color;
     }
   }
 }
