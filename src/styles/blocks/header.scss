@@ -3,7 +3,7 @@
   box-sizing: border-box;
   font-family: $font-family;
   font-weight: 500;
-  font-size: 12px;
+  font-size: $font-sm;
 }
 
 .header {
@@ -11,13 +11,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 50px;
+  padding: 0 $padding-50;
 }
 
 .logo {
   display: block;
-  height: 40px;
-  width: 40px;
+  height: $padding-50;
+  width: $padding-50;
 }
 
 .nav {
@@ -56,9 +56,9 @@
         position: absolute;
         display: block;
         content: '';
-        height: 4px;
+        height: $spacing-xs;
         width: 100%;
-        border-radius: 8px;
+        border-radius: $spacing-sm;
         background-color: $blue-color;
         bottom: 0;
         left: 0;
